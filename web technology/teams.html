@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="jacky.html"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#jacky">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sports">Sports</a></li>
+                    <li><a href="#teams" class="active">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+
+    </section>
+     <!---javascript--->
+     <script src="note.js"></script>
+
+     <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!--Team-->
+    <section class="teams" id="teams">
+        <div class="max-width1">
+            <h1 class="title1"> My Team</h1>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/boxing.jpg" alt="">
+                        <div class="text1">Israil Madriomov</div>
+                        <p>olympic champin in 2019 and owner of WBA belt</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/body building1.jpg" alt="">
+                        <div class="text1">Aziz Estet</div>
+                        <p>Trainer in our fitness and also daviser in terms of nutrients.</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/wrestling.jpg" alt="">
+                        <div class="text1">Artur Taymazov</div>
+                        <p>olympic champion many times and now retired and teaching young generation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+   
+
+
+</body>
+
+</html>

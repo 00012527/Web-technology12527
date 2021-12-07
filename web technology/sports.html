@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="sports.html"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#jacky">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sports" class="active">Sports</a></li>
+                    <li><a href="#teams">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       
+
+    </section>
+     <!---javascript--->
+     <script src="note.js"></script>
+
+     <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+   
+    
+    <!---Sport---->
+
+    <section class="sports" id="sports">
+        <h1>Sports We Offer</h1>
+        <p>As i said before, there are other services also available.</p>
+
+        <div class="row">
+            <div class="sport-col">
+                <h3>Boxing</h3>
+                <p>our fitness is fully facilitated for boxing and every year a number of olympic champions train in our
+                    facilty.
+                    Coming to the price: 100$ a little bit expensive than others but european atmosphere
+                </p>
+            </div>
+            <div class="sport-col">
+                <h3>Body Building</h3>
+                <p>On the second flor, everything is for making big muscles and be attractive and
+                    glasses that shows how you are changing that is one way of motivating. price is 400.000 sum.
+                </p>
+
+            </div>
+            <div class="sport-col">
+                <h3>Wrestling</h3>
+                <p>You can find our national type of sport Wrestling here.
+                    Interestingly, for this anyone from 7 to 70 years can use this chance
+                    as it has no restriction on age. Price is 500.000 sum.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+</body>
+
+</html>
